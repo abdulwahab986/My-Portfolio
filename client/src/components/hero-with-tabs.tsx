@@ -130,8 +130,7 @@ export default function HeroWithTabs() {
               </div>
               <div className="text-center animate-fade-in" style={{animationDelay: '0.6s'}}>
                 <h1 className="text-2xl md:text-3xl font-bold gradient-text">Abdul Wahab</h1>
-                <p className="text-base font-semibold text-foreground">Software Engineer</p>
-                <p className="text-sm text-muted-foreground">Software Quality Assurance Engineer</p>
+                <p className="text-base font-semibold text-foreground">Software Engineer | Quality Assurance Specialist</p>
               </div>
               <button 
                 onClick={handleDownloadResume}
@@ -192,8 +191,7 @@ export default function HeroWithTabs() {
               </div>
               <div className="text-center animate-fade-in" style={{animationDelay: '0.6s'}}>
                 <h1 className="text-2xl md:text-3xl font-bold gradient-text">Abdul Wahab</h1>
-                <p className="text-base font-semibold text-foreground">Software Engineer</p>
-                <p className="text-sm text-muted-foreground">Software Quality Assurance Engineer</p>
+                <p className="text-base font-semibold text-foreground">Software Engineer | Quality Assurance Specialist</p>
               </div>
               <button 
                 onClick={handleDownloadResume}
