@@ -46,7 +46,7 @@ export default function ProjectsSection() {
   return (
     <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Featured <span className="gradient-text">Projects</span>
           </h2>
@@ -57,7 +57,7 @@ export default function ProjectsSection() {
           {projects.map((project, index) => {
             const colors = getColorClasses(project.color);
             return (
-              <div key={index} className="bg-card border border-border rounded-2xl overflow-hidden hover-lift" data-testid={`project-${project.name.toLowerCase()}`}>
+              <div key={index} className="section-card overflow-hidden" data-testid={`project-${project.name.toLowerCase()}`} style={{animationDelay: `${index * 0.1}s`}}>
                 <img 
                   src={project.image} 
                   alt={`${project.name} project`} 

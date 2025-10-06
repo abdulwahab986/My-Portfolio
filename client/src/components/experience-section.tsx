@@ -2,9 +2,9 @@ import { Briefcase, GraduationCap, Check } from "lucide-react";
 
 export default function ExperienceSection() {
   return (
-    <section id="experience" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/20">
+    <section id="experience" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Work <span className="gradient-text">Experience</span>
           </h2>
@@ -15,12 +15,12 @@ export default function ExperienceSection() {
           <div className="timeline-line"></div>
           
           {/* Junior SQA Engineer */}
-          <div className="relative pl-16 pb-12">
-            <div className="absolute left-0 w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center">
-              <Briefcase className="w-6 h-6 text-background" />
+          <div className="relative pl-16 pb-12 animate-slide-in-left">
+            <div className="absolute left-0 w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center shadow-lg">
+              <Briefcase className="w-6 h-6 text-white" />
             </div>
             
-            <div className="bg-card border border-border rounded-2xl p-8 hover-lift" data-testid="experience-junior-sqa">
+            <div className="section-card" data-testid="experience-junior-sqa">
               <div className="flex flex-wrap justify-between items-start mb-4">
                 <div>
                   <h3 className="text-2xl font-bold mb-2">Junior SQA Engineer (Remote)</h3>
@@ -59,12 +59,12 @@ export default function ExperienceSection() {
           </div>
           
           {/* SQA Intern */}
-          <div className="relative pl-16">
-            <div className="absolute left-0 w-12 h-12 bg-gradient-to-br from-secondary to-accent rounded-full flex items-center justify-center">
-              <GraduationCap className="w-6 h-6 text-background" />
+          <div className="relative pl-16 animate-slide-in-right">
+            <div className="absolute left-0 w-12 h-12 bg-gradient-to-br from-secondary to-accent rounded-full flex items-center justify-center shadow-lg">
+              <GraduationCap className="w-6 h-6 text-white" />
             </div>
             
-            <div className="bg-card border border-border rounded-2xl p-8 hover-lift" data-testid="experience-sqa-intern">
+            <div className="section-card" data-testid="experience-sqa-intern">
               <div className="flex flex-wrap justify-between items-start mb-4">
                 <div>
                   <h3 className="text-2xl font-bold mb-2">SQA Engineer (Intern - Remote)</h3>

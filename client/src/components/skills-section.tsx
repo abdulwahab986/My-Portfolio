@@ -27,9 +27,9 @@ export default function SkillsSection() {
   ];
 
   return (
-    <section id="skills" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/20">
+    <section id="skills" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             Skills & <span className="gradient-text">Expertise</span>
           </h2>
@@ -38,7 +38,7 @@ export default function SkillsSection() {
         
         <div className="grid md:grid-cols-2 gap-8">
           {/* Testing Expertise */}
-          <div className="bg-card border border-border rounded-2xl p-8" data-testid="testing-expertise-section">
+          <div className="section-card animate-slide-in-left" data-testid="testing-expertise-section">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
                 <FlaskConical className="w-6 h-6 text-primary" />
@@ -61,7 +61,7 @@ export default function SkillsSection() {
           </div>
           
           {/* Technical Skills */}
-          <div className="bg-card border border-border rounded-2xl p-8" data-testid="technical-skills-section">
+          <div className="section-card animate-slide-in-right" data-testid="technical-skills-section">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center">
                 <Code className="w-6 h-6 text-secondary" />
@@ -91,7 +91,7 @@ export default function SkillsSection() {
         </div>
         
         {/* Additional Skills */}
-        <div className="mt-8 bg-card border border-border rounded-2xl p-8" data-testid="additional-skills-section">
+        <div className="mt-8 section-card animate-fade-in" data-testid="additional-skills-section">
           <h3 className="text-xl font-bold mb-6 text-center">Additional Competencies</h3>
           <div className="flex flex-wrap justify-center gap-3">
             {additionalSkills.map((skill, index) => {
