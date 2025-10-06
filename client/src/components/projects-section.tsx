@@ -58,12 +58,14 @@ export default function ProjectsSection() {
             const colors = getColorClasses(project.color);
             return (
               <div key={index} className="section-card overflow-hidden" data-testid={`project-${project.name.toLowerCase()}`} style={{animationDelay: `${index * 0.1}s`}}>
-                <img 
-                  src={project.image} 
-                  alt={`${project.name} project`} 
-                  className="w-full h-48 object-cover"
-                  data-testid={`img-project-${project.id}`}
-                />
+                <div className="w-full h-48 bg-gradient-to-br from-muted/30 to-muted/10 flex items-center justify-center p-8">
+                  <img 
+                    src={project.image} 
+                    alt={`${project.name} project`} 
+                    className="max-w-full max-h-full object-contain"
+                    data-testid={`img-project-${project.id}`}
+                  />
+                </div>
                 <div className="p-6">
                   <div className="flex items-center justify-between mb-4">
                     <h3 className="text-2xl font-bold" data-testid={`text-project-title-${project.id}`}>

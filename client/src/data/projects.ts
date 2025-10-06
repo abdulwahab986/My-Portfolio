@@ -1,3 +1,7 @@
+import jobGenieImage from "@assets/download (3)_1759782161546.png";
+import soulWhispersImage from "@assets/download (2)_1759782161548.png";
+import iSchoolImage from "@assets/unnamed_1759782161550.png";
+
 export interface Project {
   id: string;
   name: string;
@@ -63,7 +67,7 @@ export const projects: Project[] = [
     id: "soulwhispers",
     name: "SoulWhispers",
     description: "Mental wellness and meditation application requiring thorough testing of user experience, content delivery, and mobile responsiveness.",
-    image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+    image: soulWhispersImage,
     icon: "heart",
     color: "secondary",
     testingContributions: [
@@ -103,7 +107,7 @@ export const projects: Project[] = [
     id: "ischool",
     name: "ISchool",
     description: "Comprehensive school management system requiring extensive testing of administrative features, student portals, and reporting modules.",
-    image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+    image: iSchoolImage,
     icon: "graduation-cap",
     color: "accent",
     testingContributions: [
@@ -143,7 +147,7 @@ export const projects: Project[] = [
     id: "jobgenie",
     name: "JobGenie",
     description: "Job portal platform connecting employers and job seekers, requiring comprehensive testing of search algorithms, application workflows, and user profiles.",
-    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+    image: jobGenieImage,
     icon: "briefcase",
     color: "primary",
     testingContributions: [
