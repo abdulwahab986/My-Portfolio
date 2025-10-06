@@ -1,4 +1,5 @@
 import { Download, ArrowRight } from "lucide-react";
+import profileImage from "@assets/My Real_1759776822885.jpg";
 
 export default function HeroSection() {
   const handleDownloadResume = async () => {
@@ -101,7 +102,7 @@ export default function HeroSection() {
           <div className="relative animate-fade-in">
             <div className="relative z-10">
               <img 
-                src="/attached_assets/My Real_1759776822885.jpg" 
+                src={profileImage} 
                 alt="Abdul Wahab - Professional headshot" 
                 className="rounded-2xl shadow-2xl w-full max-w-md mx-auto" 
                 data-testid="hero-profile-image"

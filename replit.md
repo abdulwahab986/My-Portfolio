@@ -18,12 +18,17 @@ This is a personal portfolio website built as a full-stack web application showc
 
 ## Profile Picture
 - Updated hero section with user's professional headshot (January 6, 2025)
-- Image stored in attached_assets directory
+- Image stored in attached_assets directory and imported using @assets alias
 - Replaces placeholder stock photo
+- Fixed image loading using proper Vite import syntax
 
 ## Experience Section
 - Removed UI Testing from experience section per user request (January 6, 2025)
 - Focus on Functional, Smoke, Regression, and cross-browser testing
+
+## Testimonials Section
+- Client Testimonials section removed per user request (January 6, 2025)
+- Portfolio focuses on personal achievements and project work
 
 # User Preferences
 
