@@ -120,9 +120,6 @@ export default function HeroWithTabs() {
 
             {/* Center - Profile Picture */}
             <div className="flex flex-col items-center justify-center space-y-4">
-              {/* Helicopter Rotor */}
-              <div className="helicopter-rotor"></div>
-              
               <div className="profile-glow animate-fly-in">
                 <img 
                   src={profileImage}
@@ -185,9 +182,6 @@ export default function HeroWithTabs() {
           <div className="lg:hidden flex flex-col items-center space-y-6 w-full max-w-md px-4">
             {/* Profile Picture */}
             <div className="flex flex-col items-center justify-center space-y-4 order-1">
-              {/* Helicopter Rotor - Mobile */}
-              <div className="helicopter-rotor" style={{width: '100px', height: '6px'}}></div>
-              
               <div className="profile-glow animate-fly-in">
                 <img 
                   src={profileImage}
