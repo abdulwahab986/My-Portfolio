@@ -1,64 +1,8 @@
-import { TestTube } from "lucide-react";
+import { TestTube, ArrowRight } from "lucide-react";
+import { Link } from "wouter";
+import { projects } from "@/data/projects";
 
 export default function ProjectsSection() {
-  const projects = [
-    {
-      name: "OSqaure",
-      description: "Enterprise business management platform requiring comprehensive QA testing across multiple modules and user workflows.",
-      image: "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-      icon: "square",
-      color: "primary",
-      testingContributions: [
-        "Regression Testing across all business modules",
-        "Functional Testing of core features and workflows", 
-        "Smoke Testing for critical functionality validation",
-        "UI/UX consistency testing across platforms"
-      ],
-      tags: ["Regression", "Functional", "Smoke"]
-    },
-    {
-      name: "SoulWhispers",
-      description: "Mental wellness and meditation application requiring thorough testing of user experience, content delivery, and mobile responsiveness.",
-      image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-      icon: "heart",
-      color: "secondary",
-      testingContributions: [
-        "UI Testing for intuitive user experience",
-        "Sanity Testing for feature deployments",
-        "Cross-platform compatibility testing",
-        "Retesting for resolved issues validation"
-      ],
-      tags: ["UI Testing", "Sanity", "Retesting"]
-    },
-    {
-      name: "ISchool",
-      description: "Comprehensive school management system requiring extensive testing of administrative features, student portals, and reporting modules.",
-      image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-      icon: "graduation-cap",
-      color: "accent",
-      testingContributions: [
-        "Functional Testing of admin and student modules",
-        "Regression Testing for multi-user workflows",
-        "Black-box Testing for feature validation",
-        "Performance and load testing for peak usage"
-      ],
-      tags: ["Functional", "Regression", "Black-box"]
-    },
-    {
-      name: "JobGenie",
-      description: "Job portal platform connecting employers and job seekers, requiring comprehensive testing of search algorithms, application workflows, and user profiles.",
-      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-      icon: "briefcase",
-      color: "primary",
-      testingContributions: [
-        "Smoke Testing for critical job posting features",
-        "UI Testing for employer and candidate interfaces",
-        "Functional Testing of search and filter mechanisms",
-        "Sanity Testing for new feature releases"
-      ],
-      tags: ["Smoke", "UI Testing", "Sanity"]
-    }
-  ];
 
   const getColorClasses = (color: string) => {
     switch (color) {
@@ -117,18 +61,21 @@ export default function ProjectsSection() {
                 <img 
                   src={project.image} 
                   alt={`${project.name} project`} 
-                  className="w-full h-48 object-cover" 
+                  className="w-full h-48 object-cover"
+                  data-testid={`img-project-${project.id}`}
                 />
                 <div className="p-6">
                   <div className="flex items-center justify-between mb-4">
-                    <h3 className="text-2xl font-bold">{project.name}</h3>
+                    <h3 className="text-2xl font-bold" data-testid={`text-project-title-${project.id}`}>
+                      {project.name}
+                    </h3>
                     <div className={`w-10 h-10 ${colors.bg} rounded-lg flex items-center justify-center`}>
                       <div className={colors.icon}>
                         {getIcon(project.icon)}
                       </div>
                     </div>
                   </div>
-                  <p className="text-muted-foreground mb-4">
+                  <p className="text-muted-foreground mb-4" data-testid={`text-project-desc-${project.id}`}>
                     {project.description}
                   </p>
                   
@@ -144,13 +91,22 @@ export default function ProjectsSection() {
                     </ul>
                   </div>
                   
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2 mb-4">
                     {project.tags.map((tag, tagIndex) => (
                       <span key={tagIndex} className={`px-3 py-1 ${colors.bg} ${colors.text} rounded-full text-xs`}>
                         {tag}
                       </span>
                     ))}
                   </div>
+                  
+                  <Link 
+                    href={`/projects/${project.id}`}
+                    className={`inline-flex items-center space-x-2 ${colors.text} hover:underline font-medium`}
+                    data-testid={`link-view-details-${project.id}`}
+                  >
+                    <span>View Case Study</span>
+                    <ArrowRight className="w-4 h-4" />
+                  </Link>
                 </div>
               </div>
             );
