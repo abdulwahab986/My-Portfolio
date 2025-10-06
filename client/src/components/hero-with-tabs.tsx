@@ -87,14 +87,14 @@ export default function HeroWithTabs() {
             {/* Top Left - Experience Tab */}
             <button
               onClick={() => scrollToSection('experience')}
-              className="section-card hover:scale-105 transition-all cursor-pointer px-4 py-2 flex flex-col items-center space-y-1.5 group animate-slide-from-left w-fit justify-self-center"
+              className="section-card hover:scale-105 transition-all cursor-pointer px-3 py-1.5 flex flex-col items-center space-y-1 group animate-slide-from-left w-fit justify-self-center"
               data-testid="tab-experience"
               style={{animationDelay: '0.8s'}}
             >
-              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center group-hover:shadow-lg transition-all">
-                <Briefcase className="w-6 h-6 text-white" />
+              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center group-hover:shadow-lg transition-all">
+                <Briefcase className="w-5 h-5 text-white" />
               </div>
-              <h3 className="text-base font-bold">Experience</h3>
+              <h3 className="text-sm font-bold">Experience</h3>
               <p className="text-xs text-muted-foreground text-center whitespace-nowrap">1 year at Innovador</p>
             </button>
 
@@ -104,14 +104,14 @@ export default function HeroWithTabs() {
             {/* Top Right - Projects Tab */}
             <button
               onClick={() => scrollToSection('projects')}
-              className="section-card hover:scale-105 transition-all cursor-pointer px-4 py-2 flex flex-col items-center space-y-1.5 group animate-slide-from-right w-fit justify-self-center"
+              className="section-card hover:scale-105 transition-all cursor-pointer px-3 py-1.5 flex flex-col items-center space-y-1 group animate-slide-from-right w-fit justify-self-center"
               data-testid="tab-projects"
               style={{animationDelay: '0.8s'}}
             >
-              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-secondary to-accent flex items-center justify-center group-hover:shadow-lg transition-all">
-                <FolderOpen className="w-6 h-6 text-white" />
+              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-secondary to-accent flex items-center justify-center group-hover:shadow-lg transition-all">
+                <FolderOpen className="w-5 h-5 text-white" />
               </div>
-              <h3 className="text-base font-bold">Projects</h3>
+              <h3 className="text-sm font-bold">Projects</h3>
               <p className="text-xs text-muted-foreground text-center whitespace-nowrap">Testing portfolio</p>
             </button>
 
@@ -149,14 +149,14 @@ export default function HeroWithTabs() {
             {/* Bottom Left - Skills Tab */}
             <button
               onClick={() => scrollToSection('skills')}
-              className="section-card hover:scale-105 transition-all cursor-pointer px-4 py-2 flex flex-col items-center space-y-1.5 group animate-slide-from-left w-fit justify-self-center"
+              className="section-card hover:scale-105 transition-all cursor-pointer px-3 py-1.5 flex flex-col items-center space-y-1 group animate-slide-from-left w-fit justify-self-center"
               data-testid="tab-skills"
               style={{animationDelay: '1s'}}
             >
-              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-accent to-primary flex items-center justify-center group-hover:shadow-lg transition-all">
-                <Code className="w-6 h-6 text-white" />
+              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-accent to-primary flex items-center justify-center group-hover:shadow-lg transition-all">
+                <Code className="w-5 h-5 text-white" />
               </div>
-              <h3 className="text-base font-bold">Skills</h3>
+              <h3 className="text-sm font-bold">Skills</h3>
               <p className="text-xs text-muted-foreground text-center whitespace-nowrap">Testing expertise</p>
             </button>
 
@@ -166,14 +166,14 @@ export default function HeroWithTabs() {
             {/* Bottom Right - Education Tab */}
             <button
               onClick={() => scrollToSection('education')}
-              className="section-card hover:scale-105 transition-all cursor-pointer px-4 py-2 flex flex-col items-center space-y-1.5 group animate-slide-from-right w-fit justify-self-center"
+              className="section-card hover:scale-105 transition-all cursor-pointer px-3 py-1.5 flex flex-col items-center space-y-1 group animate-slide-from-right w-fit justify-self-center"
               data-testid="tab-education"
               style={{animationDelay: '1s'}}
             >
-              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-secondary to-primary flex items-center justify-center group-hover:shadow-lg transition-all">
-                <GraduationCap className="w-6 h-6 text-white" />
+              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-secondary to-primary flex items-center justify-center group-hover:shadow-lg transition-all">
+                <GraduationCap className="w-5 h-5 text-white" />
               </div>
-              <h3 className="text-base font-bold">Education</h3>
+              <h3 className="text-sm font-bold">Education</h3>
               <p className="text-xs text-muted-foreground text-center whitespace-nowrap">BS Software Eng.</p>
             </button>
           </div>
