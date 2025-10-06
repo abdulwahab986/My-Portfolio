@@ -5,37 +5,37 @@
 @tailwind utilities;
 
 :root {
-  --background: hsl(222, 47%, 11%);
-  --foreground: hsl(210, 40%, 98%);
-  --card: hsl(217, 33%, 17%);
-  --card-foreground: hsl(210, 40%, 98%);
-  --popover: hsl(217, 33%, 17%);
-  --popover-foreground: hsl(210, 40%, 98%);
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(222, 47%, 11%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(222, 47%, 11%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(222, 47%, 11%);
   --primary: hsl(188, 94%, 43%);
-  --primary-foreground: hsl(222, 47%, 11%);
+  --primary-foreground: hsl(0, 0%, 100%);
   --secondary: hsl(258, 90%, 66%);
-  --secondary-foreground: hsl(210, 40%, 98%);
-  --muted: hsl(217, 33%, 17%);
-  --muted-foreground: hsl(215, 20%, 65%);
+  --secondary-foreground: hsl(0, 0%, 100%);
+  --muted: hsl(210, 40%, 96%);
+  --muted-foreground: hsl(215, 16%, 47%);
   --accent: hsl(326, 78%, 65%);
-  --accent-foreground: hsl(210, 40%, 98%);
+  --accent-foreground: hsl(0, 0%, 100%);
   --destructive: hsl(0, 84%, 60%);
   --destructive-foreground: hsl(0, 0%, 100%);
-  --border: hsl(217, 33%, 25%);
-  --input: hsl(217, 33%, 25%);
+  --border: hsl(214, 32%, 91%);
+  --input: hsl(214, 32%, 91%);
   --ring: hsl(188, 94%, 43%);
   --chart-1: hsl(188, 94%, 43%);
   --chart-2: hsl(159, 78%, 36%);
   --chart-3: hsl(42, 93%, 56%);
   --chart-4: hsl(147, 79%, 42%);
   --chart-5: hsl(341, 75%, 51%);
-  --sidebar: hsl(217, 33%, 17%);
-  --sidebar-foreground: hsl(210, 40%, 98%);
+  --sidebar: hsl(0, 0%, 100%);
+  --sidebar-foreground: hsl(222, 47%, 11%);
   --sidebar-primary: hsl(188, 94%, 43%);
-  --sidebar-primary-foreground: hsl(222, 47%, 11%);
-  --sidebar-accent: hsl(217, 33%, 25%);
+  --sidebar-primary-foreground: hsl(0, 0%, 100%);
+  --sidebar-accent: hsl(210, 40%, 96%);
   --sidebar-accent-foreground: hsl(188, 94%, 43%);
-  --sidebar-border: hsl(217, 33%, 25%);
+  --sidebar-border: hsl(214, 32%, 91%);
   --sidebar-ring: hsl(188, 94%, 43%);
   --font-sans: Inter, sans-serif;
   --font-serif: Georgia, serif;
@@ -73,8 +73,15 @@
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
-    background: linear-gradient(to bottom, hsl(222, 47%, 11%), hsl(222, 47%, 8%));
     min-height: 100vh;
+  }
+
+  body:not(.dark) {
+    background: linear-gradient(to bottom, hsl(210, 40%, 98%), hsl(214, 32%, 95%));
+  }
+
+  body.dark {
+    background: linear-gradient(to bottom, hsl(222, 47%, 11%), hsl(222, 47%, 8%));
   }
 }
 
