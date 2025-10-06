@@ -225,14 +225,14 @@
 
   .helicopter-rotor {
     position: absolute;
-    top: -40px;
+    top: -20px;
     left: 50%;
     transform: translateX(-50%);
     width: 120px;
     height: 8px;
     background: linear-gradient(135deg, var(--primary), var(--secondary));
     border-radius: 4px;
-    animation: rotor-spin 0.6s linear infinite, fly-in 0.5s ease-out;
+    animation: rotor-spin 0.6s linear infinite, fly-in-from-side 0.8s ease-out;
     box-shadow: 0 0 20px rgba(6, 182, 212, 0.5);
     z-index: 10;
   }
@@ -256,19 +256,19 @@
   }
 
   .animate-fly-in {
-    animation: fly-in 0.6s ease-out;
+    animation: fly-in-from-side 0.8s ease-out;
   }
 
-  @keyframes fly-in {
+  @keyframes fly-in-from-side {
     0% {
-      transform: translateY(-200px);
+      transform: translateX(-300px);
       opacity: 0;
     }
-    60% {
-      transform: translateY(10px);
+    70% {
+      transform: translateX(10px);
     }
     100% {
-      transform: translateY(0);
+      transform: translateX(0);
       opacity: 1;
     }
   }
