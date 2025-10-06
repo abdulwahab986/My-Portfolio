@@ -11,11 +11,18 @@ This is a personal portfolio website built as a full-stack web application showc
   - 3x3 grid with profile in center cell
   - 4 tabs in corners (Experience, Projects, Skills, Education)
   - Fixed left side panel with vertical name, contact links, and theme toggle
+  - Reduced gap (gap-6) brings tabs closer to center
 - **Mobile Layout** (<1024px):
   - Stacked vertical layout with profile picture at top
   - 2x2 grid of tabs below profile for easy access
   - Floating buttons in bottom-right for theme toggle and email
 - **Smooth Navigation**: All tabs scroll smoothly to respective sections when clicked
+- **Animations Added**:
+  - Helicopter rotor spinning above profile picture (desktop and mobile)
+  - Profile picture flies in from top with bounce effect (0.6s animation)
+  - Tabs slide in from left and right sides with staggered delays (0.8s-1s)
+  - Text fades in after profile loads (0.6s delay)
+- **Title Update**: Changed from "SQA Engineer" to "Software Engineer" with "Specialist In SQA" subtitle
 - Component: `hero-with-tabs.tsx` replaces previous hero layouts
 
 ## Modern Glassmorphism Redesign (January 6, 2025)
