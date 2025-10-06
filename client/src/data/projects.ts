@@ -62,7 +62,7 @@ export const projects: Project[] = [
     },
     technologies: ["Web Application", "Desktop Application", "SQL Database", "REST APIs"],
     duration: "6 months",
-    role: "Junior SQA Engineer"
+    role: "SQA Engineer"
   },
   {
     id: "soulwhispers",
@@ -142,7 +142,7 @@ export const projects: Project[] = [
     },
     technologies: ["Web Application", "Database Management", "Reporting Tools", "Payment Gateway Integration"],
     duration: "5 months",
-    role: "Junior SQA Engineer"
+    role: "SQA Engineer"
   },
   {
     id: "jobgenie",

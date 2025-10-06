@@ -23,7 +23,7 @@ export default function ExperienceSection() {
             <div className="section-card" data-testid="experience-junior-sqa">
               <div className="flex flex-wrap justify-between items-start mb-4">
                 <div>
-                  <h3 className="text-2xl font-bold mb-2">Junior SQA Engineer (Remote)</h3>
+                  <h3 className="text-2xl font-bold mb-2">SQA Engineer (Remote)</h3>
                   <p className="text-primary font-semibold">Innovador Solutions</p>
                 </div>
                 <div className="bg-primary/10 px-4 py-2 rounded-full text-sm font-medium text-primary">
