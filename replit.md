@@ -1,6 +1,6 @@
 # Overview
 
-This is a personal portfolio website built as a full-stack web application showcasing the professional profile of Abdul Wahab, a Software Engineer and SQA Specialist. The application features a single-page architecture with sections for about, experience, projects, skills, education, and contact information. The site includes interactive elements like resume download functionality, a contact form submission system, and dark/light theme toggle.
+This is a personal portfolio website built as a full-stack web application showcasing the professional profile of Abdul Wahab, a Software Engineer and SQA Specialist. The application features a single-page architecture with sections for about, experience, projects, skills, education, and testimonials. The site includes interactive elements like resume download functionality and dark/light theme toggle.
 
 # Recent Changes (January 2025)
 
@@ -11,10 +11,19 @@ This is a personal portfolio website built as a full-stack web application showc
 - Custom color schemes for both themes
 
 ## Contact Form
-- Contact form submissions are currently logged to console
-- User dismissed external email integration (Resend)
-- Future option: Can integrate with email services like Resend, SendGrid, or Gmail if needed
-- Current approach: Store submissions in database for portfolio owner to review
+- Contact form section removed per user request (January 6, 2025)
+- User dismissed email integration options (Resend, SendGrid)
+- Contact information (email, phone, LinkedIn) remains in hero section and footer
+- Future option: Can add back with email services like Resend, SendGrid, or Gmail if needed
+
+## Profile Picture
+- Updated hero section with user's professional headshot (January 6, 2025)
+- Image stored in attached_assets directory
+- Replaces placeholder stock photo
+
+## Experience Section
+- Removed UI Testing from experience section per user request (January 6, 2025)
+- Focus on Functional, Smoke, Regression, and cross-browser testing
 
 # User Preferences
 

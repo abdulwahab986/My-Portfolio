@@ -1,13 +1,6 @@
 import { Download, ArrowRight } from "lucide-react";
 
 export default function HeroSection() {
-  const scrollToContact = () => {
-    const element = document.getElementById('contact');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   const handleDownloadResume = async () => {
     try {
       const response = await fetch('/api/resume/download');
@@ -54,14 +47,14 @@ export default function HeroSection() {
             </p>
             
             <div className="flex flex-wrap gap-4 pt-4">
-              <button 
-                onClick={scrollToContact}
+              <a 
+                href="mailto:abdulwahabstd@gmail.com"
                 className="px-8 py-4 bg-gradient-to-r from-primary to-secondary text-primary-foreground rounded-lg font-semibold hover:opacity-90 transition-opacity inline-flex items-center space-x-2"
                 data-testid="button-contact"
               >
                 <span>Get in Touch</span>
                 <ArrowRight className="w-5 h-5" />
-              </button>
+              </a>
               <button 
                 onClick={handleDownloadResume}
                 className="px-8 py-4 bg-card border border-border text-foreground rounded-lg font-semibold hover:bg-muted transition-colors inline-flex items-center space-x-2"
@@ -108,8 +101,8 @@ export default function HeroSection() {
           <div className="relative animate-fade-in">
             <div className="relative z-10">
               <img 
-                src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800" 
-                alt="Professional headshot" 
+                src="/attached_assets/My Real_1759776822885.jpg" 
+                alt="Abdul Wahab - Professional headshot" 
                 className="rounded-2xl shadow-2xl w-full max-w-md mx-auto" 
                 data-testid="hero-profile-image"
               />

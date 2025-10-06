@@ -66,13 +66,13 @@ export default function Navigation() {
                 <Moon className="w-5 h-5 text-foreground" data-testid="icon-moon" />
               )}
             </button>
-            <button 
-              onClick={() => scrollToSection('contact')}
+            <a 
+              href="mailto:abdulwahabstd@gmail.com"
               className="px-4 py-2 bg-gradient-to-r from-primary to-secondary text-primary-foreground rounded-lg font-medium hover:opacity-90 transition-opacity"
               data-testid="nav-contact"
             >
               Contact
-            </button>
+            </a>
           </div>
           
           {/* Mobile Menu Button */}
@@ -133,13 +133,13 @@ export default function Navigation() {
               >
                 Skills
               </button>
-              <button 
-                onClick={() => scrollToSection('contact')}
+              <a 
+                href="mailto:abdulwahabstd@gmail.com"
                 className="block w-full bg-primary text-primary-foreground px-6 py-2 rounded-lg text-center"
                 data-testid="mobile-nav-contact"
               >
                 Contact
-              </button>
+              </a>
             </div>
           </div>
         )}

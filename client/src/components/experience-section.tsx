@@ -38,7 +38,7 @@ export default function ExperienceSection() {
                 </li>
                 <li className="flex items-start space-x-3">
                   <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                  <span>Performed Functional, UI/UX, Smoke, Regression, and cross-browser testing to ensure application quality and consistency</span>
+                  <span>Performed Functional, Smoke, Regression, and cross-browser testing to ensure application quality and consistency</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
@@ -53,7 +53,6 @@ export default function ExperienceSection() {
               <div className="flex flex-wrap gap-2 mt-6">
                 <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">Manual Testing</span>
                 <span className="px-3 py-1 bg-secondary/10 text-secondary rounded-full text-sm">Regression Testing</span>
-                <span className="px-3 py-1 bg-accent/10 text-accent rounded-full text-sm">UI/UX Testing</span>
                 <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">Test Documentation</span>
               </div>
             </div>
