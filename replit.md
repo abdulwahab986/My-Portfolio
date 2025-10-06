@@ -4,13 +4,25 @@ This is a personal portfolio website built as a full-stack web application showc
 
 # Recent Changes (January 2025)
 
+## Tab-Based Navigation Redesign (January 6, 2025)
+- **Navigation Redesign**: Removed traditional header/navigation bar completely
+- **Centered Layout**: Profile picture positioned in the center with 4 clickable tabs around it
+- **Desktop Layout** (≥1024px):
+  - 3x3 grid with profile in center cell
+  - 4 tabs in corners (Experience, Projects, Skills, Education)
+  - Fixed left side panel with vertical name, contact links, and theme toggle
+- **Mobile Layout** (<1024px):
+  - Stacked vertical layout with profile picture at top
+  - 2x2 grid of tabs below profile for easy access
+  - Floating buttons in bottom-right for theme toggle and email
+- **Smooth Navigation**: All tabs scroll smoothly to respective sections when clicked
+- Component: `hero-with-tabs.tsx` replaces previous hero layouts
+
 ## Modern Glassmorphism Redesign (January 6, 2025)
 - Complete UI overhaul with modern glassmorphism effects and centered hero layout
 - Added radial gradient backgrounds (light and dark mode compatible)
 - Implemented `.glass-card` and `.section-card` utility classes for translucent surfaces with backdrop blur
-- Created centered hero layout (`hero-centered.tsx`) with profile picture as focal point
 - Profile picture features animated glow effect (`.profile-glow`)
-- Hero grid layout: left side (About, Experience cards), center (profile, CTA), right side (Skills, Projects cards)
 - All sections updated with glassmorphism styling: Experience, Projects, Skills, Education
 - Added smooth entrance animations: fade-in, slide-in-left, slide-in-right
 - Enhanced hover effects and transitions across all cards
