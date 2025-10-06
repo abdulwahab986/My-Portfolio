@@ -94,8 +94,8 @@ export default function HeroWithTabs() {
               <div className="w-7 h-7 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center group-hover:shadow-lg transition-all">
                 <Briefcase className="w-3.5 h-3.5 text-white" />
               </div>
-              <h3 className="text-[11px] font-bold leading-tight">Experience</h3>
-              <p className="text-[9px] text-muted-foreground text-center whitespace-nowrap leading-tight">1 year at Innovador</p>
+              <h3 className="text-xs font-bold leading-tight">Experience</h3>
+              <p className="text-[10px] text-muted-foreground text-center whitespace-nowrap leading-tight">1 year at Innovador</p>
             </button>
 
             {/* Top Center - Empty */}
@@ -111,8 +111,8 @@ export default function HeroWithTabs() {
               <div className="w-7 h-7 rounded-full bg-gradient-to-br from-secondary to-accent flex items-center justify-center group-hover:shadow-lg transition-all">
                 <FolderOpen className="w-3.5 h-3.5 text-white" />
               </div>
-              <h3 className="text-[11px] font-bold leading-tight">Projects</h3>
-              <p className="text-[9px] text-muted-foreground text-center whitespace-nowrap leading-tight">Testing portfolio</p>
+              <h3 className="text-xs font-bold leading-tight">Projects</h3>
+              <p className="text-[10px] text-muted-foreground text-center whitespace-nowrap leading-tight">Testing portfolio</p>
             </button>
 
             {/* Middle Left - Empty */}
@@ -155,8 +155,8 @@ export default function HeroWithTabs() {
               <div className="w-7 h-7 rounded-full bg-gradient-to-br from-accent to-primary flex items-center justify-center group-hover:shadow-lg transition-all">
                 <Code className="w-3.5 h-3.5 text-white" />
               </div>
-              <h3 className="text-[11px] font-bold leading-tight">Skills</h3>
-              <p className="text-[9px] text-muted-foreground text-center whitespace-nowrap leading-tight">Testing expertise</p>
+              <h3 className="text-xs font-bold leading-tight">Skills</h3>
+              <p className="text-[10px] text-muted-foreground text-center whitespace-nowrap leading-tight">Testing expertise</p>
             </button>
 
             {/* Bottom Center - Empty */}
@@ -172,8 +172,8 @@ export default function HeroWithTabs() {
               <div className="w-7 h-7 rounded-full bg-gradient-to-br from-secondary to-primary flex items-center justify-center group-hover:shadow-lg transition-all">
                 <GraduationCap className="w-3.5 h-3.5 text-white" />
               </div>
-              <h3 className="text-[11px] font-bold leading-tight">Education</h3>
-              <p className="text-[9px] text-muted-foreground text-center whitespace-nowrap leading-tight">BS Software Eng.</p>
+              <h3 className="text-xs font-bold leading-tight">Education</h3>
+              <p className="text-[10px] text-muted-foreground text-center whitespace-nowrap leading-tight">BS Software Eng.</p>
             </button>
           </div>
 
