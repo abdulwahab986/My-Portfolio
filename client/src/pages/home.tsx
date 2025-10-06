@@ -1,5 +1,4 @@
-import Navigation from "@/components/navigation";
-import HeroCentered from "@/components/hero-centered";
+import HeroWithTabs from "@/components/hero-with-tabs";
 import ExperienceSection from "@/components/experience-section";
 import ProjectsSection from "@/components/projects-section";
 import SkillsSection from "@/components/skills-section";
@@ -8,9 +7,8 @@ import EducationSection from "@/components/education-section";
 export default function Home() {
   return (
     <div className="min-h-screen">
-      <Navigation />
       <main>
-        <HeroCentered />
+        <HeroWithTabs />
         <ExperienceSection />
         <ProjectsSection />
         <SkillsSection />

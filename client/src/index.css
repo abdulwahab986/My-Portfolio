@@ -218,6 +218,11 @@
     animation: slideInRight 0.8s ease-out;
   }
 
+  .writing-vertical-rl {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+
   @keyframes slideInLeft {
     0% {
       transform: translateX(-100px);
