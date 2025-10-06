@@ -1,6 +1,7 @@
 import jobGenieImage from "@assets/download (3)_1759782161546.png";
 import soulWhispersImage from "@assets/download (2)_1759782161548.png";
 import iSchoolImage from "@assets/unnamed_1759782161550.png";
+import osqaureImage from "@assets/images (1)_1759782916841.png";
 
 export interface Project {
   id: string;
@@ -27,7 +28,7 @@ export const projects: Project[] = [
     id: "osqaure",
     name: "OSqaure",
     description: "Enterprise business management platform requiring comprehensive QA testing across multiple modules and user workflows.",
-    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+    image: osqaureImage,
     icon: "square",
     color: "primary",
     testingContributions: [
