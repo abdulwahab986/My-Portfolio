@@ -4,6 +4,18 @@ This is a personal portfolio website built as a full-stack web application showc
 
 # Recent Changes (January 2025)
 
+## Modern Glassmorphism Redesign (January 6, 2025)
+- Complete UI overhaul with modern glassmorphism effects and centered hero layout
+- Added radial gradient backgrounds (light and dark mode compatible)
+- Implemented `.glass-card` and `.section-card` utility classes for translucent surfaces with backdrop blur
+- Created centered hero layout (`hero-centered.tsx`) with profile picture as focal point
+- Profile picture features animated glow effect (`.profile-glow`)
+- Hero grid layout: left side (About, Experience cards), center (profile, CTA), right side (Skills, Projects cards)
+- All sections updated with glassmorphism styling: Experience, Projects, Skills, Education
+- Added smooth entrance animations: fade-in, slide-in-left, slide-in-right
+- Enhanced hover effects and transitions across all cards
+- Maintained responsive design and dark mode compatibility
+
 ## Dark Mode Implementation
 - Added theme toggle with light/dark mode support
 - Theme persists across page reloads via localStorage
@@ -64,6 +76,10 @@ Preferred communication style: Simple, everyday language.
 - CSS variables for dynamic theming
 - Custom fonts: Inter (primary), Georgia (serif), Menlo (monospace)
 - Responsive design with mobile-first approach
+- Modern glassmorphism effects with `.glass-card` and `.section-card` utility classes
+- Radial gradient backgrounds for depth and visual interest
+- Custom animations: fade-in, slide-in-left, slide-in-right, floating, profile-glow
+- Backdrop-filter blur effects for translucent surfaces
 
 ## Backend Architecture
 
