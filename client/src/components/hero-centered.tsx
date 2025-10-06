@@ -54,7 +54,7 @@ export default function HeroCentered() {
           </div>
           <div className="space-y-4">
             <div>
-              <h3 className="font-bold text-lg">JR SQA</h3>
+              <h3 className="font-bold text-lg">Junior SQA Engineer</h3>
               <p className="text-primary font-medium">Innovador Solutions</p>
               <p className="text-sm text-muted-foreground">Nov 2024 – Jun 2025</p>
             </div>
