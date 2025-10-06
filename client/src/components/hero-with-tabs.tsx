@@ -184,8 +184,11 @@ export default function HeroWithTabs() {
           {/* Mobile Layout - Stacked vertically */}
           <div className="lg:hidden flex flex-col items-center space-y-6 w-full max-w-md px-4">
             {/* Profile Picture */}
-            <div className="flex flex-col items-center justify-center space-y-4 animate-fade-in order-1">
-              <div className="profile-glow">
+            <div className="flex flex-col items-center justify-center space-y-4 order-1">
+              {/* Helicopter Rotor - Mobile */}
+              <div className="helicopter-rotor" style={{width: '100px', height: '6px'}}></div>
+              
+              <div className="profile-glow animate-fly-in">
                 <img 
                   src={profileImage}
                   alt="Abdul Wahab"
@@ -193,9 +196,10 @@ export default function HeroWithTabs() {
                   data-testid="hero-profile-image-mobile"
                 />
               </div>
-              <div className="text-center">
+              <div className="text-center animate-fade-in" style={{animationDelay: '0.6s'}}>
                 <h1 className="text-2xl md:text-3xl font-bold gradient-text">Abdul Wahab</h1>
-                <p className="text-sm text-muted-foreground">SQA Engineer</p>
+                <p className="text-base font-semibold text-foreground">Software Engineer</p>
+                <p className="text-sm text-muted-foreground">Specialist In SQA</p>
               </div>
               <button 
                 onClick={handleDownloadResume}
