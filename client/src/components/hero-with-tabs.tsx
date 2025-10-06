@@ -81,8 +81,8 @@ export default function HeroWithTabs() {
       {/* Main Content - Center with Tabs Around */}
       <div className="max-w-6xl mx-auto w-full">
         <div className="relative flex items-center justify-center">
-          {/* Grid Container for Tabs */}
-          <div className="grid grid-cols-3 grid-rows-3 gap-8 lg:gap-12 w-full max-w-4xl">
+          {/* Grid Container for Tabs - Desktop: 3x3 grid, Mobile: Stacked */}
+          <div className="hidden lg:grid lg:grid-cols-3 lg:grid-rows-3 gap-12 w-full max-w-4xl">
             
             {/* Top Left - Experience Tab */}
             <button
@@ -171,6 +171,80 @@ export default function HeroWithTabs() {
               <h3 className="text-lg font-bold">Education</h3>
               <p className="text-xs text-muted-foreground text-center">BS Software Eng.</p>
             </button>
+          </div>
+
+          {/* Mobile Layout - Stacked vertically */}
+          <div className="lg:hidden flex flex-col items-center space-y-6 w-full max-w-md px-4">
+            {/* Profile Picture */}
+            <div className="flex flex-col items-center justify-center space-y-4 animate-fade-in order-1">
+              <div className="profile-glow">
+                <img 
+                  src={profileImage}
+                  alt="Abdul Wahab"
+                  className="w-48 h-48 md:w-56 md:h-56 object-cover rounded-full border-4 border-white dark:border-gray-800 shadow-2xl"
+                  data-testid="hero-profile-image-mobile"
+                />
+              </div>
+              <div className="text-center">
+                <h1 className="text-2xl md:text-3xl font-bold gradient-text">Abdul Wahab</h1>
+                <p className="text-sm text-muted-foreground">SQA Engineer</p>
+              </div>
+              <button 
+                onClick={handleDownloadResume}
+                className="px-4 py-2 glass-card text-sm font-semibold hover:bg-muted/50 transition-all inline-flex items-center space-x-2"
+                data-testid="button-download-resume-mobile"
+              >
+                <Download className="w-4 h-4" />
+                <span>Resume</span>
+              </button>
+            </div>
+
+            {/* Tabs Grid - 2x2 */}
+            <div className="grid grid-cols-2 gap-4 w-full order-2">
+              <button
+                onClick={() => scrollToSection('experience')}
+                className="section-card hover:scale-105 transition-all cursor-pointer p-4 flex flex-col items-center space-y-2 group"
+                data-testid="tab-experience-mobile"
+              >
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center group-hover:shadow-lg transition-all">
+                  <Briefcase className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="text-sm font-bold">Experience</h3>
+              </button>
+
+              <button
+                onClick={() => scrollToSection('projects')}
+                className="section-card hover:scale-105 transition-all cursor-pointer p-4 flex flex-col items-center space-y-2 group"
+                data-testid="tab-projects-mobile"
+              >
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-secondary to-accent flex items-center justify-center group-hover:shadow-lg transition-all">
+                  <FolderOpen className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="text-sm font-bold">Projects</h3>
+              </button>
+
+              <button
+                onClick={() => scrollToSection('skills')}
+                className="section-card hover:scale-105 transition-all cursor-pointer p-4 flex flex-col items-center space-y-2 group"
+                data-testid="tab-skills-mobile"
+              >
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-accent to-primary flex items-center justify-center group-hover:shadow-lg transition-all">
+                  <Code className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="text-sm font-bold">Skills</h3>
+              </button>
+
+              <button
+                onClick={() => scrollToSection('education')}
+                className="section-card hover:scale-105 transition-all cursor-pointer p-4 flex flex-col items-center space-y-2 group"
+                data-testid="tab-education-mobile"
+              >
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-secondary to-primary flex items-center justify-center group-hover:shadow-lg transition-all">
+                  <GraduationCap className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="text-sm font-bold">Education</h3>
+              </button>
+            </div>
           </div>
         </div>
       </div>
