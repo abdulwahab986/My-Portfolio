@@ -1,6 +1,20 @@
 # Overview
 
-This is a personal portfolio website built as a full-stack web application showcasing the professional profile of Abdul Wahab, a Software Engineer and SQA Specialist. The application features a single-page architecture with sections for about, experience, projects, skills, education, and contact information. The site includes interactive elements like resume download functionality and a contact form submission system.
+This is a personal portfolio website built as a full-stack web application showcasing the professional profile of Abdul Wahab, a Software Engineer and SQA Specialist. The application features a single-page architecture with sections for about, experience, projects, skills, education, and contact information. The site includes interactive elements like resume download functionality, a contact form submission system, and dark/light theme toggle.
+
+# Recent Changes (January 2025)
+
+## Dark Mode Implementation
+- Added theme toggle with light/dark mode support
+- Theme persists across page reloads via localStorage
+- Toggle buttons in desktop and mobile navigation
+- Custom color schemes for both themes
+
+## Contact Form
+- Contact form submissions are currently logged to console
+- User dismissed external email integration (Resend)
+- Future option: Can integrate with email services like Resend, SendGrid, or Gmail if needed
+- Current approach: Store submissions in database for portfolio owner to review
 
 # User Preferences
 
@@ -23,8 +37,13 @@ Preferred communication style: Simple, everyday language.
 
 **State Management**
 - TanStack React Query (v5) for server state management and data fetching
-- Custom hooks for UI state (mobile detection, toast notifications)
+- Custom hooks for UI state (mobile detection, toast notifications, theme)
 - Form handling with React Hook Form and Zod validation
+
+**Theme Management**
+- Custom theme provider hook with localStorage persistence
+- Light and dark mode color schemes
+- Theme toggle in navigation (desktop and mobile)
 
 **Styling Approach**
 - Tailwind CSS with custom configuration
