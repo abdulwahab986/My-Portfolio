@@ -82,12 +82,12 @@ export default function HeroWithTabs() {
       <div className="max-w-6xl mx-auto w-full">
         <div className="relative flex items-center justify-center">
           {/* Grid Container for Tabs - Desktop: 3x3 grid, Mobile: Stacked */}
-          <div className="hidden lg:grid lg:grid-cols-3 lg:grid-rows-3 gap-6 w-full max-w-3xl">
+          <div className="hidden lg:grid lg:grid-cols-3 lg:grid-rows-3 gap-4 w-full max-w-3xl">
             
             {/* Top Left - Experience Tab */}
             <button
               onClick={() => scrollToSection('experience')}
-              className="section-card hover:scale-105 transition-all cursor-pointer px-4 py-4 flex flex-col items-center space-y-2 group animate-slide-from-left w-fit justify-self-center"
+              className="section-card hover:scale-105 transition-all cursor-pointer px-4 py-2 flex flex-col items-center space-y-1.5 group animate-slide-from-left w-fit justify-self-center"
               data-testid="tab-experience"
               style={{animationDelay: '0.8s'}}
             >
@@ -104,7 +104,7 @@ export default function HeroWithTabs() {
             {/* Top Right - Projects Tab */}
             <button
               onClick={() => scrollToSection('projects')}
-              className="section-card hover:scale-105 transition-all cursor-pointer px-4 py-4 flex flex-col items-center space-y-2 group animate-slide-from-right w-fit justify-self-center"
+              className="section-card hover:scale-105 transition-all cursor-pointer px-4 py-2 flex flex-col items-center space-y-1.5 group animate-slide-from-right w-fit justify-self-center"
               data-testid="tab-projects"
               style={{animationDelay: '0.8s'}}
             >
@@ -149,7 +149,7 @@ export default function HeroWithTabs() {
             {/* Bottom Left - Skills Tab */}
             <button
               onClick={() => scrollToSection('skills')}
-              className="section-card hover:scale-105 transition-all cursor-pointer px-4 py-4 flex flex-col items-center space-y-2 group animate-slide-from-left w-fit justify-self-center"
+              className="section-card hover:scale-105 transition-all cursor-pointer px-4 py-2 flex flex-col items-center space-y-1.5 group animate-slide-from-left w-fit justify-self-center"
               data-testid="tab-skills"
               style={{animationDelay: '1s'}}
             >
@@ -166,7 +166,7 @@ export default function HeroWithTabs() {
             {/* Bottom Right - Education Tab */}
             <button
               onClick={() => scrollToSection('education')}
-              className="section-card hover:scale-105 transition-all cursor-pointer px-4 py-4 flex flex-col items-center space-y-2 group animate-slide-from-right w-fit justify-self-center"
+              className="section-card hover:scale-105 transition-all cursor-pointer px-4 py-2 flex flex-col items-center space-y-1.5 group animate-slide-from-right w-fit justify-self-center"
               data-testid="tab-education"
               style={{animationDelay: '1s'}}
             >
