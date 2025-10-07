@@ -116,12 +116,13 @@
   }
 
   .hover-lift {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+                box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .hover-lift:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(6, 182, 212, 0.2);
+    transform: translateY(-8px);
+    box-shadow: 0 25px 50px rgba(6, 182, 212, 0.25);
   }
 
   .timeline-line {
@@ -134,20 +135,20 @@
   }
 
   .skill-badge {
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .skill-badge:hover {
-    transform: scale(1.05);
+    transform: scale(1.08);
     background: linear-gradient(135deg, var(--primary), var(--secondary));
   }
 
   .animate-fade-in {
-    animation: fadeIn 0.6s ease-out;
+    animation: fadeIn 0.8s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .animate-slide-up {
-    animation: slideUp 0.6s ease-out;
+    animation: slideUp 0.8s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .animate-float {
@@ -181,6 +182,7 @@
     -webkit-backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .dark .glass-card {
@@ -206,16 +208,22 @@
   }
 
   @keyframes pulse-glow {
-    0%, 100% { opacity: 0.3; transform: scale(1); }
-    50% { opacity: 0.5; transform: scale(1.05); }
+    0%, 100% { 
+      opacity: 0.3; 
+      transform: scale(1); 
+    }
+    50% { 
+      opacity: 0.6; 
+      transform: scale(1.08); 
+    }
   }
 
   .animate-slide-in-left {
-    animation: slideInLeft 0.8s ease-out;
+    animation: slideInLeft 1s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .animate-slide-in-right {
-    animation: slideInRight 0.8s ease-out;
+    animation: slideInRight 1s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .writing-vertical-rl {
@@ -316,5 +324,39 @@
       align-items: start;
       padding: 6rem 2rem;
     }
+  }
+
+  /* Professional button and link transitions */
+  button, a {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  button:active {
+    transform: scale(0.95);
+  }
+
+  a:hover {
+    opacity: 0.8;
+  }
+
+  /* Smooth scroll behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Page transitions */
+  @keyframes pageEnter {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  main {
+    animation: pageEnter 0.6s cubic-bezier(0.4, 0, 0.2, 1);
   }
 }

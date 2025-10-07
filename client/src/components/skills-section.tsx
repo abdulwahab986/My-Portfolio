@@ -50,8 +50,9 @@ export default function SkillsSection() {
               {testingSkills.map((skill, index) => (
                 <div 
                   key={index} 
-                  className="skill-badge bg-muted border border-border rounded-lg p-4 text-center cursor-pointer"
+                  className="skill-badge bg-muted border border-border rounded-lg p-4 text-center cursor-pointer animate-fade-in"
                   data-testid={`skill-badge-${skill.name.toLowerCase().replace(/\s+/g, '-')}`}
+                  style={{animationDelay: `${index * 0.1}s`}}
                 >
                   <div className="text-xl mb-2">{skill.icon}</div>
                   <p className="font-semibold text-sm">{skill.name}</p>
@@ -71,7 +72,12 @@ export default function SkillsSection() {
             
             <div className="space-y-4">
               {technicalSkills.map((skill, index) => (
-                <div key={index} data-testid={`technical-skill-${skill.name.toLowerCase().replace(/\s+/g, '-')}`}>
+                <div 
+                  key={index} 
+                  className="animate-fade-in"
+                  data-testid={`technical-skill-${skill.name.toLowerCase().replace(/\s+/g, '-')}`}
+                  style={{animationDelay: `${index * 0.1}s`}}
+                >
                   <div className="flex justify-between mb-2">
                     <span className="font-semibold">{skill.name}</span>
                     <span className="text-muted-foreground">
@@ -80,8 +86,8 @@ export default function SkillsSection() {
                   </div>
                   <div className="h-2 bg-muted rounded-full overflow-hidden">
                     <div 
-                      className="h-full bg-gradient-to-r from-primary to-secondary transition-all duration-500 ease-out" 
-                      style={{ width: `${skill.level}%` }}
+                      className="h-full bg-gradient-to-r from-primary to-secondary transition-all duration-1000 ease-out animate-slide-in-left" 
+                      style={{ width: `${skill.level}%`, animationDelay: `${index * 0.1}s` }}
                     ></div>
                   </div>
                 </div>

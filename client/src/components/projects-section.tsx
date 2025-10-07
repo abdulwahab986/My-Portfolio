@@ -57,12 +57,17 @@ export default function ProjectsSection() {
           {projects.map((project, index) => {
             const colors = getColorClasses(project.color);
             return (
-              <div key={index} className="section-card overflow-hidden" data-testid={`project-${project.name.toLowerCase()}`} style={{animationDelay: `${index * 0.1}s`}}>
-                <div className="w-full h-48 bg-gradient-to-br from-muted/30 to-muted/10 flex items-center justify-center p-8">
+              <div 
+                key={index} 
+                className="section-card overflow-hidden animate-slide-in-left group" 
+                data-testid={`project-${project.name.toLowerCase()}`} 
+                style={{animationDelay: `${index * 0.15}s`}}
+              >
+                <div className="w-full h-48 bg-gradient-to-br from-muted/30 to-muted/10 flex items-center justify-center p-8 overflow-hidden">
                   <img 
                     src={project.image} 
                     alt={`${project.name} project`} 
-                    className="max-w-full max-h-full object-contain"
+                    className="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-110"
                     data-testid={`img-project-${project.id}`}
                   />
                 </div>
