@@ -14,7 +14,7 @@ export default function HeroWithTabs() {
         const a = document.createElement('a');
         a.style.display = 'none';
         a.href = url;
-        a.download = 'Abdul_Wahab_Resume.pdf';
+        a.download = 'Abdul_Wahab_Resume.pdfxxXXCV';
         document.body.appendChild(a);
         a.click();
         window.URL.revokeObjectURL(url);
