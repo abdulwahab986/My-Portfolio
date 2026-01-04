@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "server/index.ts",
+      "src": "package.json",
       "use": "@vercel/node"
     },
     {
@@ -18,7 +18,16 @@
     },
     {
       "src": "/(.*)",
-      "dest": "client/$1"
+      "dest": "client/$1",
+      "check": true
+    },
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/(.*)",
+      "status": 200,
+      "dest": "client/index.html"
     }
   ]
 }
