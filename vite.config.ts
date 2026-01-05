@@ -4,22 +4,14 @@ import path from "path";
 
 export default defineConfig({
   plugins: [react()],
-  resolve: {
-    alias: {
-      "@": path.resolve(import.meta.dirname, "src"),
-      "@shared": path.resolve(import.meta.dirname, "../shared"),
-      "@assets": path.resolve(import.meta.dirname, "../attached_assets"),
-    },
-  },
-  root: path.resolve(import.meta.dirname),
+  root: path.resolve(__dirname, "client"), // Vite ko bata raha hai ke frontend client folder mein hai
   build: {
-    // Vercel ke liye output folder ko simple 'dist' rakhein
-    outDir: path.resolve(import.meta.dirname, "dist"),
+    outDir: path.resolve(__dirname, "dist"), // Build root folder ke 'dist' mein jayegi
     emptyOutDir: true,
   },
-  server: {
-    fs: {
-      strict: false, // Deployment mein aksar ise false rakhna behtar hota hai
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "client/src"),
     },
   },
 });
